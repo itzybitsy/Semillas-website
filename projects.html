@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Semillas, Art, Justice + Healing</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="scripts/jquery-2.2.1.min.js"></script>
+<script src="scripts/masonry.pkgd.min.js"></script>
+<script>
+  $(function(){
+ // jQuery
+$('.grid').masonry({
+  columnWidth: 120
+});
+// init Masonry
+var $grid = $('.grid').masonry({
+  // options...
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+ $('.grid').masonry({
+    // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+  });
+</script>
+
+<style>
+body {
+	background-image: url(images/about-projects.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-position:rights;
+	font-family: Lato light;
+	color: #000!important;
+	}
+p {
+	color: #000!important;
+	}
+#petition{
+	width:90%;
+	}
+#petition p {
+	font-family:lato light;
+	color: #000;
+ }
+#petition h1 {
+	color: #F00;
+	text-align:center;
+	}
+h3 {
+	color: #000!important;
+
+	}
+.titles a:hover h1 {
+	color: #666!important;
+
+	}
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  height: auto;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width:  40%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 40%; }
+.grid-item--height3 { height: 60%; }
+.grid-item--height4 { height: 80%; }
+</style>
+
+</head>
+<body>
+<header>
+<div class="logo-search"><img src="images/semillas-logo.jpg"><
+<div class="search"> <span class="fa fa-search"></span>
+  <input placeholder="Search term"></div></div></header>
+<aside><div id="logo-nav" class="navigation">
+<div class="shape"><img src="images/shape.png"></div>
+<ul><a href="#"><li>About</li></a>
+<a href="#"><li>Projects</li></a>
+<a href="#"><li>Events/Actions</li></a>
+<a href="#"><li>Screenings</li></a>
+<a href="#"><li>News</li></a>
+<a href="#"><li>Contact</li></a>
+<div class="social" style="clear:right;">
+<a target="_new" href="https://www.facebook.com/ayotzinapadanceproject/"><img src="images/facebook.png"></a>
+<a href=""><img src="images/instagram.png"></a>
+<a href="mailto:SemillasCollective@gmail.com"><img src="images/email.png"></a></div>
+<div id="signup">
+<h2>Join us</h2>
+<form action="" method="post">
+  <input type="text" name="email" placeholder="email" id="email" />
+  <input type="submit" name="submit" value="Submit" id="submit-button" />
+</form>
+</div>
+</ul>
+</ul>
+</div>
+</aside>
+<div id="petition">
+<div class="grid">
+  <div class="grid-item"><img src="images/film/11813279_1625173384410336_572606216093425821_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"><img src="images/film/11813279_1625173384410336_572606216093425821_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height3"><img src="images/film/11825992_1252401064797849_1817861813893556825_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height2"><img src="images/film/11831720_1252008618170427_7979474444352370785_n-1.jpg" width="100%"></div>
+  <div class="grid-item grid-item--width3"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg"  width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--width2 grid-item--height3"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--width2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height3"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+  <div class="grid-item grid-item--height2"><img src="images/film/12717455_951354201618622_6950530333261699365_n.jpg" width="100%"></div>
+</div>
+<div class="titles" style="position:relative; top:20em; background-color: #FFF;><a href="#"><h1>“They Tried To Bury Us 
+They Didn’t Know We Were Seeds”</h1></a>
+<p style="font-style:italic;"> Dance Film inspired by
+Mexico’s Human Rights Crisis
+Call to End Plan Merida </p>
+<p>	A Collaboration (between artists: dancers, musicians, film makers and social justice activists, community organizers ) Inspired after the tragic disappearance of 43   Mexican students, who've been missing since last September of 2014. Since this tragedy, artists from around the world have responded by using different forms of expression, seeking to inspire a global response action and spread awareness around about this event and the thousands of the other human right violations taking place in Mexico.    (add link: “Learn more” about cast/ or collaborators) this can connect people to a page w a blurb of the Artists/collectives and folks we can give credit to) OR  a “Semillas Artists Corner” where we can add this stuff without seeming like we are “Showing Off” OR trying to exploit the cause.
+</p>
+<p>
+	SEMILLAS was the first to do this via dance film, The dance film taps into the resilience of each collaborator - featuring Mexican Indigenous Danza ( the first dance film to show indigenous Danza) , Classical Ballet, Contemporary & Hip-Hop/ Flex. The process of this creative collaboration also seeks to demonstrate the healing power dance holds when dealing with trauma, the pain and histories we hold in our bodies, and connecting cultures and communities around the world. 
+
+	The film score of the dance film layers harmonious and machine-like percussion evocative of change, indigenous instruments contrasting powerful audio clips with messaging and information about the disappearance of the students, original audio of a testimony of a survivor student of the disappearance is heard, He describes the role the Mexican military played the night of the disappearance, you also hear the voice of Eric Garner, showing solidarity to the struggle against police brutality in the United States, as well as messaging about and other crimes committed by the Mexican military against innocent civilians and what individuals can do to help bring justice to Mexico. 
+</p>
+<p>	The Storyline was developed by human rights activists, Mexican community organizers, and a message that parents of the missing students left with U.S. citizens during their time in NYC, in front of the United Nations, they asked for support in calling the end of Plan Merida: the supply of weapons and military support from the U.S.A. to Mexico.  It was collectively decided that the dance film, would focus on calling for the end of Plan Merida: The supply of weapons and military support from the USA to Mexico and to end the sales of arms across the border, the root of much of the violence in Mexico. 
+
+	Dance Film is a medium that is capable of reaching millions. The process of this creative collaboration wanted to demonstrate the healing power dance holds when dealing with trauma and highlight its ability to unite people from different worlds.   As we explore the role of dance in society, we also unite as global citizens. The climate of our generation is calling for us to not fear action, but to support it through our own movement. Diversifying Movement & Connecting Cross- Culturally:   Varied movement vocabularies will be represented by dancers of 4 different styles; Mexican Indigenous Danza, Classical Ballet, Contemporary & Hip-Hop/ Flex. The cast includes , contemporary and classical dance artists, from all of the world, ie. The Philappines, Europe, Africa, Mexico, the USA  and Brooklyn-inspired flex master. Dancers from all over the world who volunteered their talent to show solidarity to Mexico.
+</p>
+ </div>
+</div>
+</div>
+
+</body>
+</html>
